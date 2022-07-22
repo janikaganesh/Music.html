@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            button{
+                width: 50%;
+                height: 75px;
+                font-size: 25px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                transition: 0.3s;
+                border: 3px solid black;
+            }
+            #zoom{
+                text-align: center;
+                font-size: 25px;
+                animation-name: zoom;
+                animation-iteration-count: 1;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes zoom{
+                from{font-size: 25px;}
+                to{font-size: 40px;}
+            }
+            #red{
+                background-color: red;
+            }
+            #orange{
+                background-color: orange;
+            }
+            button:hover{
+                opacity:0.7
+            }
+            #purple{
+                background-color: purple;
+            }
+            #blue{
+                background-color: blue;
+            }
+            div{
+                width: 1000px;
+                height: 400px;
+                animation-name: change;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                background-color: black;
+                color: white;
+            }
+            @keyframes change{
+                0%{background-color: red;}
+                20%{background-color: orange;}
+                40%{background-color: yellow;}
+                60%{background-color: green;}
+                80%{background-color: blue;}
+                100%{background-color: purple;}
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <br> <br> <br> <br> <br>
+            <h2 id="zoom"> How many colors does the rainbow contain? </h2>
+            <a href="incorrect.html"> <button id="blue"> 1 </button></a>
+            <a href="correct.html"> <button id="red"> 7 </button> </a>
+        </div>
+    </body>
+</html>
